@@ -1,0 +1,21 @@
+{
+  "info": {"name":"Baozi Store API","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key":"baseUrl","value":"http://localhost:8080/api"}],
+  "item": [
+    {"name":"Clientes","item":[
+      {"name":"Criar cliente","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"nome\": \"SEU_NOME+RU\",\n  \"clienteDesde\": \"2026-10-19\"\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/clientes"}},
+      {"name":"Listar clientes","request":{"method":"GET","url":"{{baseUrl}}/clientes"}},
+      {"name":"Consultar cliente ID 1","request":{"method":"GET","url":"{{baseUrl}}/clientes/1"}},
+      {"name":"Excluir cliente ID 1","request":{"method":"DELETE","url":"{{baseUrl}}/clientes/1"}}]},
+    {"name":"Produtos","item":[
+      {"name":"Criar produto","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"nome\": \"Baozi tradicional\",\n  \"preco\": 8.50,\n  \"estoque\": true\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/produtos"}},
+      {"name":"Listar produtos","request":{"method":"GET","url":"{{baseUrl}}/produtos"}},
+      {"name":"Consultar produto ID 1","request":{"method":"GET","url":"{{baseUrl}}/produtos/1"}},
+      {"name":"Excluir produto ID 1","request":{"method":"DELETE","url":"{{baseUrl}}/produtos/1"}}]},
+    {"name":"Pedidos","item":[
+      {"name":"Criar pedido","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"clienteId\": 1,\n  \"produtoId\": 1,\n  \"quantidade\": 3\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/pedidos"}},
+      {"name":"Listar pedidos","request":{"method":"GET","url":"{{baseUrl}}/pedidos"}},
+      {"name":"Consultar pedido ID 1","request":{"method":"GET","url":"{{baseUrl}}/pedidos/1"}},
+      {"name":"Excluir pedido ID 1","request":{"method":"DELETE","url":"{{baseUrl}}/pedidos/1"}}]}
+  ]
+}
