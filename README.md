@@ -31,8 +31,8 @@ Todas as rotas têm prefixo `/api` e recebem/retornam JSON.
 | GET | `/pedidos/{id}` | Consultar pedido |
 | DELETE | `/pedidos/{id}` | Excluir pedido |
 
-Cliente exemplo: `{"nome":"SEU_NOME+RU","clienteDesde":"2026-10-19"}`. Produto: `{"nome":"Baozi tradicional","preco":8.50,"estoque":true}`. Pedido: `{"clienteId":1,"produtoId":1,"quantidade":3}`.
+Exemplo de cliente: `{"nome":"Cliente Baozi Store","clienteDesde":"2026-10-19"}`. Produto: `{"nome":"Baozi tradicional","preco":8.50,"estoque":true}`. Pedido: `{"clienteId":1,"produtoId":1,"quantidade":3}`.
 
-Importe a coleção `postman/Baozi-Store.postman_collection.json`. Execute os POSTs antes dos GETs e DELETEs. Substitua `SEU_NOME+RU` pelo seu nome e RU antes de capturar as evidências para o PDF.
+Importe a coleção `postman/Baozi-Store.postman_collection.json`. Execute os POSTs de cliente e produto antes do POST de pedido; em seguida, use os GETs para consulta e, se necessário, os DELETEs para remover os registros de demonstração.
 
 No H2 padrão, os dados são temporários. Para MySQL, configure `DB_URL`, `DB_USER` e `DB_PASSWORD` e inicie com `--spring.profiles.active=mysql`.

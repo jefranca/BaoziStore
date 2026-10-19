@@ -3,7 +3,7 @@
   "variable": [{"key":"baseUrl","value":"http://localhost:8080/api"}],
   "item": [
     {"name":"Clientes","item":[
-      {"name":"Criar cliente","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"nome\": \"SEU_NOME+RU\",\n  \"clienteDesde\": \"2026-10-19\"\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/clientes"}},
+      {"name":"Criar cliente","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"nome\": \"Cliente Baozi Store\",\n  \"clienteDesde\": \"2026-10-19\"\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/clientes"}},
       {"name":"Listar clientes","request":{"method":"GET","url":"{{baseUrl}}/clientes"}},
       {"name":"Consultar cliente ID 1","request":{"method":"GET","url":"{{baseUrl}}/clientes/1"}},
       {"name":"Excluir cliente ID 1","request":{"method":"DELETE","url":"{{baseUrl}}/clientes/1"}}]},
